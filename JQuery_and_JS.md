@@ -1,6 +1,6 @@
-##Implementação da lógica de programação com JavaScript puro e jQuery
+## Implementação da lógica de programação com JavaScript puro e jQuery
 
-#Este exemplo demonstra como implementar uma lógica de programação simples usando JavaScript puro e jQuery para lidar com eventos de mudança em um elemento <select>.
+# Este exemplo demonstra como implementar uma lógica de programação simples usando JavaScript puro e jQuery para lidar com eventos de mudança em um elemento <select>. 
 
 jQuery:
 
