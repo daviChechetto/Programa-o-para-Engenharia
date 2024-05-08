@@ -1,36 +1,42 @@
 # Implementação da lógica de programação com JavaScript puro e jQuery
 
-## Este exemplo demonstra como implementar uma lógica de programação simples usando JavaScript puro e jQuery para lidar com eventos de mudança em um elemento <select>. 
+### Este exemplo demonstra como implementar uma lógica de programação simples usando JavaScript puro e jQuery para lidar com eventos de mudança em um elemento  < select > . 
 
-### jQuery:
 
-// JQUERY
-$("#selectAno").on("change", function() {
-  $selectMes = $("#selectMes")        
+### JQUERY
 
-  if ($(this).val()) {
-    $selectMes.prop("disabled", false)
-    return;
-  }
-  $selectMes.prop("disabled", true).val("")
-})
-// JQUERY
+
+//JQUERY code start
+
+$("#selectAno").on("change", function() {<br>
+  $selectMes = $("#selectMes")<br>
+
+  if ($(this).val()) {<br>
+    $selectMes.prop("disabled", false)<br>
+    return;<br>
+  }<br>
+  $selectMes.prop("disabled", true).val("")<br>
+})<br>
+
+//JQUERY code end
+
 
 No código acima, utilizamos jQuery para selecionar o elemento com o ID "selectAno"
 e adicionamos um ouvinte de evento de mudança. Quando o valor do <select> é alterado,
 verificamos se o valor é verdadeiro. Se for, habilitamos o elemento <select> com o
 ID "selectMes"; caso contrário, desabilitamos o elemento e limpamos o valor selecionado.
 
-JavaScript puro:
+### JavaScript **puro**
 
-// JavaScript
-const selectAno = document.querySelectorAll("#selectAno");
-for (let i = 0; i < selectAno.length;  i++){
-  selectAno[i].addEventListener('change', function(){
-    console.log(this)
-  })
-}
-// JavaScript
+// JavaScript code start
+
+const selectAno = document.querySelectorAll("#selectAno");<br><br>
+for (let i = 0; i < selectAno.length;  i++){<br>
+  selectAno[i].addEventListener('change', function(){<br>
+    console.log(this)<br>
+  })<br>
+}<br><br>
+// JavaScript code end
 
 No código JavaScript puro acima, selecionamos todos os elementos com o ID "selectAno"
 usando document.querySelectorAll(). Em seguida, adicionamos um ouvinte de evento de 
